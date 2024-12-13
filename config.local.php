@@ -30,13 +30,27 @@ if (!defined('CONSOLE')) {
     @set_time_limit(3600);
 }
 
+register_shutdown_function(function () {
+  $error = error_get_last();
+  if ($error && (in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR]))) {
+    $formattedError = sprintf(
+      "Date: %s\nMessage: %s in %s on line %s\n\n",
+      date('d-m-Y H:i:s'),
+      $error['message'],
+      $error['file'],
+      $error['line']
+    );
+    file_put_contents(__DIR__ . '/fatal_errors.txt', $formattedError, FILE_APPEND);
+  }
+});
+
 /*
  * Database connection options
  */
-$config['db_host'] = '%DB_HOST%';
-$config['db_name'] = '%DB_NAME%';
-$config['db_user'] = '%DB_USER%';
-$config['db_password'] = '%DB_PASSWORD%';
+$config['db_host'] = 'localhost';
+$config['db_name'] = 'email_verification';
+$config['db_user'] = 'email_verification';
+$config['db_password'] = 'email_verification_pass';
 
 $config['database_backend'] = 'mysqli';
 
@@ -58,12 +72,12 @@ $config['table_prefix'] = 'cscart_';
  */
 
 // Host and directory where software is installed on no-secure server
-$config['http_host'] = '%HTTP_HOST%';
-$config['http_path'] = '%HOST_DIR%';
+$config['http_host'] = 'dnemov.cart-power.tech';
+$config['http_path'] = '/projects/cp_email_verification';
 
 // Host and directory where software is installed on secure server
-$config['https_host'] = '%HTTPS_HOST%';
-$config['https_path'] = '%HOST_DIR%';
+$config['https_host'] = 'dnemov.cart-power.tech';
+$config['https_path'] = '/projects/cp_email_verification';
 
 /*
  * Misc options

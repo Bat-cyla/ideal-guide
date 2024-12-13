@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+
+msgctxt "Addons::name::cp_email_verification"
+msgid "Cart-Power: Email verification for Users and Vendors"
+msgstr "Cart-Power: Верификация Email для пользователей и вендоров"
+
+msgctxt "Addons::description::cp_email_verification"
+msgid "The module allows you to verify the user's e-mail when registering and placing a guest order. Developed by <a href='https://cart-power.com'>Cart-Power</a>"
+msgstr "Модуль позволяет верифицировать E-mail пользователя при регистрации и оформлении гостевого заказа. Developed by <a href='https://cart-power.com'>Cart-Power</a>"
+
+msgctxt "SettingsSections::cp_email_verification::general"
+msgid "General"
+msgstr "Основные"
+
+msgctxt "SettingsOptions::cp_email_verification::licensekey"
+msgid "License key"
+msgstr "Лицензионный ключ"
+
+msgctxt "Languages::cp_your_license_is_not_valid"
+msgid "You should enter valid License Key. Please, contact us (sales@cart-power.com), if you face any issues."
+msgstr "Вы должны ввести актуальный ключ. Пожалуйста, свяжитесь с нами (sales@cart-power.com), если вы столкнетесь с какими то проблемами."
+
+msgctxt "SettingsOptions::cp_email_verification::verification_vendor_admins"
+msgid "Enable vendor admin verification"
+msgstr "Включить верификацию администраторов продавца"
+
+msgctxt "SettingsOptions::cp_email_verification::аuthorization_without_verification"
+msgid "Allow authorization with unconfirmed email"
+msgstr "Разрешить авторизацию с неподтвержденным адресом электронной почты"
+
+msgctxt "SettingsOptions::cp_email_verification::verification_guest_orders"
+msgid "Enable verification for guest orders"
+msgstr "Включить верификацию для гостевых заказов"
+
+msgctxt "SettingsOptions::cp_email_verification::link_verification_lifetime"
+msgid "Account activation link lifetime (N hours)"
+msgstr "Срок жизни ссылки на активацию аккаунта (N часов)"
+
+msgctxt "SettingsOptions::cp_email_verification::link_verification_timer"
+msgid "Resend link after (N seconds)"
+msgstr "Отправить ссылку повторно через (N секунд)"
+
+msgctxt "SettingsOptions::cp_email_verification::delete_not_verification_account"
+msgid "Delete unconfirmed accounts without orders"
+msgstr "Удалять неподтвержденные аккаунты без заказов"
+
+msgctxt "SettingsOptions::cp_email_verification::verified_old_accounts"
+msgid "User accounts created before installation of the module are considered confirmed"
+msgstr "Аккаунты пользователей созданные до установки модуля считать подтвержденными"
+
+msgctxt "SettingsOptions::cp_email_verification::dont_delete_old_accounts"
+msgid "Do not delete accounts created before installation of the module"
+msgstr "Не удалять аккаунты созданные до установки модуля"
+
+msgctxt "SettingsOptions::cp_email_verification::delete_users_verification_data"
+msgid "Remove users email verification data"
+msgstr "Удалить данные о верификации электронной почты пользователей"
+
+msgctxt "SettingsSections::cp_email_verification::cp_cron"
+msgid "CRON"
+msgstr "CRON"
+
+msgctxt "SettingsOptions::cp_email_verification::cron_password"
+msgid "CRON password"
+msgstr "Пароль для запуска команды по расписанию"
+
+msgctxt "SettingsOptions::cp_email_verification::delete_after_time"
+msgid "Delete unconfirmed accounts without orders(days)"
+msgstr "Удалять неподтвержденные аккаунты без заказов(дней)"
+
+msgctxt "Languages::cp_email_verification.try_manually"
+msgid "Start manually"
+msgstr "Запустить вручную"
+
+msgctxt "Languages::cp_email_verification.delete_unconfirmed_accounts_without_orders"
+msgid "Delete unconfirmed accounts without orders"
+msgstr "Удаление неподтвержденных аккаунтов без заказов"
+
+msgctxt "Languages::cp_email_verification.cron_delete_unconfirmed_accounts_without_orders"
+msgid "Use this script to delete unconfirmed accounts without orders"
+msgstr "Используйте этот скрипт для удаления неподтвержденных аккаунтов без заказов"
+
+msgctxt "Languages::cp_email_verification.after_success_registration"
+msgid "Your account has been created successfully. You will be able to log in after confirming your email address. We have sent you an email with a link to activate your account."
+msgstr "Ваш аккаунт успешно создан. Вы сможете авторизоваться после подтверждения адреса электронной почты. Мы отправили вам письмо со ссылкой для активации аккаунта."
+
+msgctxt "Languages::cp_email_verification.after_success_verification"
+msgid "Thanks for the confirmation. Your account has been activated."
+msgstr "Спасибо за подтверждение. Ваш аккаунт активирован."
+
+msgctxt "Languages::cp_email_verification.token_is_invalid"
+msgid "Your verification token is invalid."
+msgstr "Ваш токен верификации недействителен."
+
+msgctxt "Languages::cp_email_verification.verify_for_authentication"
+msgid "Your email address has not been confirmed. Please check your email."
+msgstr "Ваш адрес электронной почты не был подтвержден. Пожалуйста, проверьте Email."
+
+msgctxt "Languages::email_template.cp_email_verification.notifications.email_notifications_user_t_c"
+msgid "Sending a link to email verification"
+msgstr "Отправка ссылки для верификации email"
+
+msgctxt "Languages::cp_email_verification.cp_email_verified"
+msgid "Verified"
+msgstr "Верифицирован"
+
+msgctxt "Languages::cp_email_verification.cp_unable_to_execute_command"
+msgid "Unable to execute command. Setting 'Delete unconfirmed accounts without orders' is not on"
+msgstr "Невозможно выполнить команду. Настройка 'Удалять неподтвержденные аккаунты без заказов' не включена"
+
+msgctxt "Languages::email_template.cp_email_verification.notifications.email_notifications_guest_t_c"
+msgid "Sending a link to email verification"
+msgstr "Отправка ссылки для верификации email"
+
+msgctxt "Languages::email_template.cp_email_verification.notifications.email_notifications_vendor_t_c"
+msgid "Sending a link to email verification"
+msgstr "Отправка ссылки для верификации email"
+
+msgctxt "Languages::cp_email_verification.email_notifications_subj"
+msgid "CS-Cart: email verification"
+msgstr "CS-Cart: верификация email"
+
+msgctxt "Languages::cp_email_verification.you_registered"
+msgid "You have registered on [url_storefront]"
+msgstr "Вы зарегистрировались на [url_storefront]"
+
+msgctxt "Languages::cp_email_verification.confirm_email"
+msgid "Please confirm your email address by following the link [link_verification]"
+msgstr "Пожалуйста, подтвердите адрес электронной почты перейдя по ссылке [link_verification]"
+
+msgctxt "Languages::cp_email_verification.you_place_order"
+msgid "You place an order at [url_storefront]"
+msgstr "Вы размещаете заказ на [url_storefront]"
+
+msgctxt "Languages::cp_email_verification.you_registered_vendor"
+msgid "You have registered on [url_storefront] as a vendor."
+msgstr "Вы зарегистрировались на [url_storefront] в качестве продавца."
+
+msgctxt "Languages::cp_email_verification"
+msgid "Email verification"
+msgstr "Верификация email"
+
+msgctxt "Languages::cp_email_verification.event.email_notifications_user.name"
+msgid "User email verification"
+msgstr "Верификация email пользователя"
+
+msgctxt "Languages::cp_email_verification.event.email_notifications_guest.name"
+msgid "Email verification for guest order"
+msgstr "Верификация email для гостевого заказа"
+
+msgctxt "Languages::cp_email_verification.event.email_notifications_vendor.name"
+msgid "Vendor email verification"
+msgstr "Верификация email продавца"
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.title"
+msgid "Email address verification"
+msgstr "Подтверждение адреса электронной почты"
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.message"
+msgid "To make sure that your email is correct, we have sent you a message to <strong>[email]</strong>.<br/><br/>Please check your inbox and <strong>follow the link</strong> in the email."
+msgstr "Чтобы убедиться, что Email указан без ошибок, мы отправили вам сообщение на <strong>[email]</strong>.<br/><br/>Пожалуйста, проверьте входящие и <strong>перейдите по ссылке</strong> в письме."
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.warning"
+msgid "Make sure you follow the link in the message or enter a different email."
+msgstr "Убедитесь, что перешли по ссылке в сообщении либо укажите другой Email."
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.button.all_done"
+msgid "All done"
+msgstr "Все готово"
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.button.timer"
+msgid "Resend after [timer] sec."
+msgstr "Отправить повторно через [timer] сек."
+
+msgctxt "Languages::cp_email_verification.checkout.guest_verification.popup.button.resend"
+msgid "Resend"
+msgstr "Отправить повторно"

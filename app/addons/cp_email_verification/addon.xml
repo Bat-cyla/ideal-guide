@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>cp_email_verification</id>
+    <version>1.0</version>
+    <status>disabled</status>
+    <priority>100</priority>
+    <position>100</position>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <authors>
+        <author>
+            <name>Cart-Power</name>
+            <email>sales@cart-power.com</email>
+            <url>https://cart-power.com</url>
+        </author>
+    </authors>
+    <supplier>Cart-Power</supplier>
+    <supplier_link>https://cart-power.com</supplier_link>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="аuthorization_without_verification">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="verification_guest_orders">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="link_verification_lifetime">
+                        <type>input</type>
+                        <default_value>5</default_value>
+                    </item>
+                    <item id="link_verification_timer">
+                        <type>input</type>
+                        <default_value>60</default_value>
+                    </item>
+                    <item id="delete_not_verification_account">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="verified_old_accounts">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="dont_delete_old_accounts">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="delete_users_verification_data">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="cp_cron">
+                <items>
+                    <item id="cron_password" edition_type="ROOT">
+                        <type>input</type>
+                        <default_value>cron_password</default_value>
+                    </item>
+                    <item id="delete_after_time" edition_type="ROOT">
+                        <type>input</type>
+                        <default_value>10</default_value>
+                    </item>
+                    <item id="cron_template">
+                        <type>template</type>
+                        <default_value>cron_template.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <email_templates type="file">resources/email_templates.xml</email_templates>
+    <functions>
+        <item for="install">fn_cp_email_verification_install</item>
+        <item for="uninstall">fn_cp_email_verification_uninstall</item>
+    </functions>
+</addon>

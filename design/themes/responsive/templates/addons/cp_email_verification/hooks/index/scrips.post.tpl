@@ -1,0 +1,1 @@
+{script src="js/addons/cp_email_verification/func.js"}

@@ -1,0 +1,2 @@
+<a class="btn cm-dialog-opener hidden cm-dialog-auto-size" id="cp_variations_open_modal_link" data-ca-target-id="cp_variations_modal" title="{__("cp_generate_cart_from_file.cp_variations_modal")}"></a>
+<div id='cp_variations_modal' class='hidden'><!--cp_variations_modal--></div>
